@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30sp"
+    android:gravity="center"
+    tools:context=".RegistrationActivity"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingTop="30sp">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:paddingBottom="20sp">
+     <TextView
+         android:layout_width="80dp"
+         android:layout_height="wrap_content"
+         android:text="Name: "
+         android:textColor="#188E98"
+         android:textSize="18sp"
+         android:textStyle="bold">
+
+     </TextView>
+
+      <EditText
+          android:id="@+id/name"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:backgroundTint="#000000"
+          android:hint="Name"
+          android:textColor="#000000" />
+  </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20sp">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:textColor="#188E98"
+            android:textStyle="bold"
+            android:textSize="16sp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:hint="Email ID"
+            android:textColor="#000000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20sp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="69dp"
+            android:text="Password"
+            android:textColor="#188E98"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:hint="Password"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="50dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:text="Confirm Password: "
+            android:textColor="#188E98"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/ConfPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#000000"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"
+            android:textColor="#000000" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SignUp"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_round"
+        android:textStyle="bold"
+        android:textAllCaps="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
